@@ -14,6 +14,7 @@
 		891912FF1BF500CF00CCE938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891912FD1BF500CF00CCE938 /* LaunchScreen.storyboard */; };
 		8919130A1BF500CF00CCE938 /* AudioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891913091BF500CF00CCE938 /* AudioPlayerTests.swift */; };
 		891913151BF500CF00CCE938 /* AudioPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891913141BF500CF00CCE938 /* AudioPlayerUITests.swift */; };
+		891913231BF509B000CCE938 /* Build Me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 891913221BF509B000CCE938 /* Build Me.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		891913101BF500CF00CCE938 /* AudioPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		891913141BF500CF00CCE938 /* AudioPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerUITests.swift; sourceTree = "<group>"; };
 		891913161BF500CF00CCE938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		891913221BF509B000CCE938 /* Build Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Build Me.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				891912F41BF500CF00CCE938 /* AppDelegate.swift */,
 				891912F61BF500CF00CCE938 /* ViewController.swift */,
+				891913221BF509B000CCE938 /* Build Me.mp3 */,
 				891912F81BF500CF00CCE938 /* Main.storyboard */,
 				891912FB1BF500CF00CCE938 /* Assets.xcassets */,
 				891912FD1BF500CF00CCE938 /* LaunchScreen.storyboard */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891913231BF509B000CCE938 /* Build Me.mp3 in Resources */,
 				891912FF1BF500CF00CCE938 /* LaunchScreen.storyboard in Resources */,
 				891912FC1BF500CF00CCE938 /* Assets.xcassets in Resources */,
 				891912FA1BF500CF00CCE938 /* Main.storyboard in Resources */,
