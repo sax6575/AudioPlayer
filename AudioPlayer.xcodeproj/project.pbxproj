@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03B0F5D91BF55BA900E0ED82 /* vroom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03B0F5D81BF55BA900E0ED82 /* vroom.mp3 */; };
 		891912F51BF500CF00CCE938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891912F41BF500CF00CCE938 /* AppDelegate.swift */; };
 		891912F71BF500CF00CCE938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891912F61BF500CF00CCE938 /* ViewController.swift */; };
 		891912FA1BF500CF00CCE938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891912F81BF500CF00CCE938 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03B0F5D81BF55BA900E0ED82 /* vroom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = vroom.mp3; path = ../../../Downloads/vroom.mp3; sourceTree = "<group>"; };
 		891912F11BF500CF00CCE938 /* AudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		891912F41BF500CF00CCE938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		891912F61BF500CF00CCE938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				891912F41BF500CF00CCE938 /* AppDelegate.swift */,
 				891912F61BF500CF00CCE938 /* ViewController.swift */,
+				03B0F5D81BF55BA900E0ED82 /* vroom.mp3 */,
 				891913221BF509B000CCE938 /* Build Me.mp3 */,
 				891912F81BF500CF00CCE938 /* Main.storyboard */,
 				891912FB1BF500CF00CCE938 /* Assets.xcassets */,
@@ -235,6 +238,7 @@
 				891913231BF509B000CCE938 /* Build Me.mp3 in Resources */,
 				891912FF1BF500CF00CCE938 /* LaunchScreen.storyboard in Resources */,
 				891912FC1BF500CF00CCE938 /* Assets.xcassets in Resources */,
+				03B0F5D91BF55BA900E0ED82 /* vroom.mp3 in Resources */,
 				891912FA1BF500CF00CCE938 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +490,7 @@
 				8919131B1BF500CF00CCE938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8919131C1BF500CF00CCE938 /* Build configuration list for PBXNativeTarget "AudioPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				8919131E1BF500CF00CCE938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8919131F1BF500CF00CCE938 /* Build configuration list for PBXNativeTarget "AudioPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				891913211BF500CF00CCE938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
