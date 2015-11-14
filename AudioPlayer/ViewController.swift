@@ -14,7 +14,7 @@ import MediaPlayer
 class ViewController: UIViewController, MPMediaPickerControllerDelegate {
     
     var mp3Player: AVAudioPlayer = AVAudioPlayer()
-    var mediaPicker: MPMediaPickerController = MPMediaPickerController(mediaTypes: .AnyAudio)
+    var mediaPicker: MPMediaPickerController = MPMediaPickerController()
     //var enableRate: Bool = Bool()
     //var rate: Float = 2.0
     
@@ -33,6 +33,14 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
     }
     
        
+    @IBAction func selectSong(sender: AnyObject) {
+    
+    mediaSelect()
+    
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -84,7 +92,9 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
     
     func mediaSelect(){
         
-        if let picker = mediaPicker{
+        var picker = mediaPicker
+        
+        if picker == mediaPicker {
             picker.delegate = self
             picker.allowsPickingMultipleItems = true
             picker.showsCloudItems = true

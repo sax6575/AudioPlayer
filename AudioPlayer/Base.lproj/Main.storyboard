@@ -41,12 +41,21 @@
                                     <action selector="faster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1nf-za-48Z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTW-PI-WaT">
+                                <rect key="frame" x="278" y="213" width="44" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="selectSong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E4d-qU-1fi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iw6-bo-qLi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4r4-Xs-7eD"/>
                             <constraint firstItem="ncP-ap-yuE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AM2-0k-cye"/>
+                            <constraint firstItem="dTW-PI-WaT" firstAttribute="leading" secondItem="iw6-bo-qLi" secondAttribute="leading" id="Eup-wh-wlD"/>
                             <constraint firstItem="iw6-bo-qLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yrH-Ti-i8s"/>
                         </constraints>
                     </view>
