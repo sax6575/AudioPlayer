@@ -14,11 +14,14 @@ import MediaPlayer
 class ViewController: UIViewController, MPMediaPickerControllerDelegate {
     
     var mp3Player: AVAudioPlayer = AVAudioPlayer()
-    var mediaPicker: MPMediaPickerController = MPMediaPickerController()
+    var mediaPicker: MPMediaPickerController = MPMediaPickerController(mediaTypes: .AnyAudio)
     //var enableRate: Bool = Bool()
     //var rate: Float = 2.0
     
     
+    @IBAction func songSelect(sender: AnyObject) {
+        mediaSelect()
+    }
 
     @IBAction func play(sender: AnyObject) {
         playSong()
@@ -32,22 +35,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
         speedUp()
     }
     
-       
-    @IBAction func selectSong(sender: AnyObject) {
     
-    mediaSelect()
-    
-    }
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-       
-        
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -55,7 +43,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
     
     //button functions
     func playSong() {
-        let mp3Path = NSBundle.mainBundle().pathForResource("vroom", ofType: "mp3")
+        let mp3Path = NSBundle.mainBundle().pathForResource("Build Me", ofType: "mp3")
         let song:NSURL = NSURL(fileURLWithPath: mp3Path!)
         
         
@@ -68,7 +56,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
     }
     
     func speedUp(){
-        let mp3Path = NSBundle.mainBundle().pathForResource("vroom", ofType: "mp3")
+        let mp3Path = NSBundle.mainBundle().pathForResource("Build Me", ofType: "mp3")
         let song:NSURL = NSURL(fileURLWithPath: mp3Path!)
         
         
@@ -90,11 +78,12 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
         }
     }
     
+    
     func mediaSelect(){
+        let picker = mediaPicker
         
-        var picker = mediaPicker
         
-        if picker == mediaPicker {
+        if  picker == mediaPicker{
             picker.delegate = self
             picker.allowsPickingMultipleItems = true
             picker.showsCloudItems = true
@@ -107,6 +96,38 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
         }
         
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        title = "Media picker..."
+        
+        let buttonPickAndPlay = UIButton(type: .System)
+        let pickAndPlay = buttonPickAndPlay
+
+        
+        if pickAndPlay == buttonPickAndPlay {
+            pickAndPlay.frame = CGRect(x: 0, y: 0, width: 200, height: 37)
+            pickAndPlay.center = CGPoint(x: view.center.x, y: view.center.y - 50)
+            pickAndPlay.setTitle("Pick and Play", forState: .Normal)
+            pickAndPlay.addTarget(self, action: "mediaSelect", forControlEvents: .TouchUpInside)
+            view.addSubview(pickAndPlay)
+            
+        }
+        
+        let buttonStopPlaying = UIButton(type: .System)
+        let stopPlaying = buttonPickAndPlay
+        
+        if stopPlaying == buttonStopPlaying {
+            stopPlaying.frame = CGRect(x: 0, y: 0, width: 200, height: 37)
+            stopPlaying.center = CGPoint(x: view.center.x, y: view.center.y + 50)
+            stopPlaying.setTitle("Stop Playing", forState: .Normal)
+            
+        }
+        
+    }
+
     
     
     
